@@ -6,10 +6,20 @@
     <title></title>
 </head>
 <body>
-<div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
-    </th:block>
-</div>
+<h3><a href="/new">New Car</a></h3>
+<table border="1" cellpadding="5">
+    <!--<tr>-->
+        <!--<th>ID</th>-->
+        <!--<th>Firstname</th>-->
+        <!--<th>Lastname</th>-->
+        <!--<th>Age</th>-->
+        <!--<th>Action</th>-->
+    <!--</tr>-->
+    <div>
+        <th:block th:each="msg : ${messages}">
+            <h1 th:text="${msg}"></h1>
+        </th:block>
+    </div>
+</table>
 </body>
 </html>
